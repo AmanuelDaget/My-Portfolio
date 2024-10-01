@@ -22,8 +22,8 @@ export const Projects = () => {
   ];
 
   return (
-    <div className="portfolio-container">
-      <h1 className="portfolio-title">Projects Portfolio</h1>
+    <div className="project-page-container">
+      <h1 className="my-projects">My Projects</h1>
       <p className="portfolio-subtitle">Search projects by title or filter by category</p>
 
       <div className="portfolio-search-filter">

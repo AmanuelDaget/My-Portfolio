@@ -1,12 +1,14 @@
 /* Portfolio.css */
-.portfolio-container {
+.project-page-container {
     text-align: center;
     padding: 40px;
   }
   
-  .portfolio-title {
-    font-size: 36px;
-    font-weight: bold;
+  .my-projects {
+    color: rgb(10, 37, 46);
+    font-size: clamp(24px, 5vw, 36px);
+    font-weight: 500;
+    margin-bottom: 40px;
   }
   
   .portfolio-subtitle {

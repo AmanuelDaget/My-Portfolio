@@ -118,6 +118,40 @@
     height: 2px;
     background-color: #333;
   }
+ 
+ .footer-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 5rem 5px 20px;
+    border-top: 1px solid rgb(221, 221, 221);
+    margin-top: 60px;
+  }
+  .follow-txt{
+    font-size: 2rem;
+    font-weight: normal;
+    color: #474747;
+  }
+  .socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 3.5rem;
+  }
+  .socials a{
+     color: rgb(197, 197, 197);
+  }
+  .socials a:hover{
+    color: rgb(107, 170, 241);
+ }
+ .copyright{
+    color: rgb(110, 110, 110);
+    font-size: 18px;
+  }
   
   /* Mobile styles */
   @media (max-width: 768px) {

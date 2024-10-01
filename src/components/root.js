@@ -4,6 +4,11 @@ import A from '../assets/A.png'
 import NightlightOutlinedIcon from '@mui/icons-material/NightlightOutlined';
 import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
 import CloseIcon from '@mui/icons-material/Close';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import FacebookIcon from '@mui/icons-material/Facebook';
 
 export const Root = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -53,6 +58,27 @@ export const Root = () => {
       <div>
         <Outlet />
       </div>
+      <section className='footer-section'>
+             <p className='follow-txt'>Follow me</p>
+             <div className='socials'>
+                <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">
+                   <GitHubIcon style={{ fontSize: '45px'}} />
+                </a>
+                <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">
+                   <LinkedInIcon style={{ fontSize: '45px' }} />
+                </a>
+                <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">
+                   <TwitterIcon style={{fontSize: '45px'}} />
+                </a>
+                <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">
+                   <YouTubeIcon style={{ fontSize: '45px'}} />
+                </a>
+                <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">
+                   <FacebookIcon style={{fontSize: '45px'}} />
+                </a>
+             </div>
+             <p className='copyright'> &copy; 2024 Amanuel</p>
+        </section>
     </>
   );
 };

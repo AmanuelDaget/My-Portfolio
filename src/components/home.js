@@ -85,27 +85,6 @@ export const Home = () => {
               <button>More Projects</button>
             </div>
         </section>
-        <section className='footer-section'>
-             <p className='follow-txt'>Follow me</p>
-             <div className='socials'>
-                <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">
-                   <GitHubIcon style={{ fontSize: '45px'}} />
-                </a>
-                <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">
-                   <LinkedInIcon style={{ fontSize: '45px' }} />
-                </a>
-                <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">
-                   <TwitterIcon style={{fontSize: '45px'}} />
-                </a>
-                <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">
-                   <YouTubeIcon style={{ fontSize: '45px'}} />
-                </a>
-                <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">
-                   <FacebookIcon style={{fontSize: '45px'}} />
-                </a>
-             </div>
-             <p className='copyright'> &copy; 2024 Amanuel</p>
-        </section>
     </div>
       
   );

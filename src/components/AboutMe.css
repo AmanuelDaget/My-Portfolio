@@ -1,0 +1,77 @@
+/* Container to hold the image and text */
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-top: 40px;
+  }
+  
+  /* Image styling */
+  .about-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Text container styling */
+  .about-text {
+    max-width: 700px;
+    line-height: 1.6;
+  }
+ 
+  /* Paragraph text */
+  .about-text p {
+    font-size: 16px;
+    color: #1d3741;
+  }
+  .about-text .secont-aboutMe-txt{
+    margin-top: 20px;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 900px) {
+    .about-text p {
+      font-size: 16px;
+    }
+    .about-image img {
+      width: 220px;
+      height: 220px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+      text-align: center;
+    }
+    .about-image img {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    .about-text h2 {
+      font-size: 28px;
+    }
+    .about-text p {
+      font-size: 15px;
+    }
+  }
+  
+  @media (max-width: 560px) {
+    .about-text h2 {
+      font-size: 24px;
+    }
+    .about-text p {
+      font-size: 14px;
+    }
+    .about-image img {
+      width: 180px;
+      height: 180px;
+    }
+  }
+  

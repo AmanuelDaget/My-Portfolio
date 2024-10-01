@@ -23,19 +23,37 @@ export const Home = () => {
   const projects = [
     {
       id: 1,
-      title: 'Google Health Platform',
-      category: 'Web Application',
-      image: 'path-to-image-1', // Replace with actual image paths
+      title: 'QRShield Anti Pc Theft',
+      category: 'Web Application + Mobile Application',
+      image: 'path-to-image-1', 
     },
     {
       id: 2,
-      title: 'Phoenix Digital Agency',
+      title: 'QRShield Anti Pc Theft ',
       category: 'Mobile Application',
-      image: 'path-to-image-2',
+      image: 'path-to-image-1', 
     },
     {
       id: 3,
-      title: 'Project Management UI',
+      title: 'Full Stack Employee management',
+      category: 'MERN Application',
+      image: 'path-to-image-2',
+    },
+    {
+      id: 4,
+      title: 'Pizza Ordering Front End ',
+      category: 'Front End Web App',
+      image: 'path-to-image-3',
+    },
+    {
+      id: 5,
+      title: 'Full Stack Registration and Login system ',
+      category: 'MERN Application',
+      image: 'path-to-image-3',
+    },
+    {
+      id: 6,
+      title: 'Pizza Ordering Front End ',
       category: 'UI/UX Design',
       image: 'path-to-image-3',
     },

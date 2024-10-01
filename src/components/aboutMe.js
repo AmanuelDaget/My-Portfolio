@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutMe.css';
-import profileImage from '../assets/A.png'; // Replace with the path to your image file
+import profileImage from '../assets/'; 
 
 export const AboutMe = () => {
   return (

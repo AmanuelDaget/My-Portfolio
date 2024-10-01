@@ -28,9 +28,9 @@ export const Contact = () => {
       </div>
       <div className="contact-details">
         <h2>Contact details</h2>
-        <p><i className="fa fa-map-marker"></i> Your Address, Your City, Your Country</p>
-        <p><i className="fa fa-envelope"></i> email@domain.com</p>
-        <p><i className="fa fa-phone"></i> 555 8888 888</p>
+        <p><i className="fa fa-map-marker"></i> Gondar,Ethiopia</p>
+        <p><i className="fa fa-envelope"></i> dagetamanuel@gmail.com</p>
+        <p><i className="fa fa-phone"></i> +251 960 824 277</p>
       </div>
     </div>
   );

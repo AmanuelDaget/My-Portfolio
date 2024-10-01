@@ -1,0 +1,277 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Home section container */
+  .home-section {
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    height: 100vh;
+    background-color: #fff;
+  }
+  
+  /* Content container for text */
+  .content {
+    flex: 1;
+    max-width: 500px;
+    padding-left: 40px;
+  }
+  
+  .content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0a2540;
+    margin-bottom: 20px;
+  }
+  
+  .content p {
+    font-size: 1.25rem;
+    color: #5a5a5a;
+    margin-bottom: 40px;
+  }
+  
+  /* Download CV button */
+  .download-btn {
+    background-color: #f0f3ff;
+    color: #3f50ff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .download-btn i {
+    margin-right: 10px;
+  }
+  
+  .download-btn:hover {
+    background-color: #e0e5ff;
+  }
+  
+  /* Image container */
+  .animation-container {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    max-height: 700px;
+  }
+  
+  /* Projects section  */
+
+  .projects-section {
+    position: relative;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .projects-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: center;
+    margin: 60px;
+
+  }
+  
+  .projects-header p {
+    text-align: center;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+  }
+  
+  /* Search and filter styling */
+  .search-filter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .search-bar {
+    padding: 10px;
+    width: 40%;
+    border: 1px solid #dfe6e9;
+    border-radius: 8px;
+  }
+  
+  .filter-select {
+    padding: 10px;
+    width: 20%;
+    border: 1px solid #dfe6e9;
+    border-radius: 8px;
+  }
+  
+  /* Grid for projects */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+  }
+  
+  .project-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+/*   
+  .project-card:hover {
+    transform: scale(1.05);
+  } */
+  
+  .project-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .project-card h3 {
+    font-size: 1.25rem;
+    color: #34495e;
+    margin-bottom: 10px;
+  }
+  
+  .project-card p {
+    font-size: 1rem;
+    color: #7f8c8d;
+  }
+
+  .view-more-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 2px;
+  }
+  .view-more-btn button{
+    background-color: #2b75ff;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+  }
+  .footer-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 5rem 5px 20px;
+    border-top: 1px solid rgb(221, 221, 221);
+  }
+  .follow-txt{
+    font-size: 2rem;
+    font-weight: normal;
+    color: #474747;
+  }
+  .socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 3.5rem;
+  }
+  .socials a{
+     color: rgb(197, 197, 197);
+  }
+  .socials a:hover{
+    color: rgb(107, 170, 241);
+ }
+ .copyright{
+    color: rgb(110, 110, 110);
+    font-size: 18px;
+  }
+  
+  /* Media Queries for responsiveness */
+
+  @media (max-width: 1200px) {
+    .projects-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .search-filter {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .search-bar, .filter-select {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
+@media (max-width: 768px) {
+    .home-section {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .content {
+      max-width: 100%;
+      margin-bottom: 30px;
+      margin-left: 1px;
+    }
+  
+    .animation-container {
+        justify-content: center;
+        max-width: 400px;
+        max-height: 400px;
+      }
+    .projects-grid {
+        grid-template-columns: 1fr;
+      }
+    
+      .projects-header h1 {
+        font-size: 2rem;
+        margin: 10px;
+      }
+    
+      .project-card h3 {
+        font-size: 1.1rem;
+      }
+    
+      .project-card p {
+        font-size: 0.9rem;
+      }
+  }
+  
+  @media (max-width: 576px) {
+    .projects-section {
+      padding: 20px;
+    }
+  
+    .projects-header h1 {
+      font-size: 1.8rem;
+      margin: 10px;
+    }
+  
+    .search-filter {
+      align-items: stretch;
+    }
+  
+    .search-bar, .filter-select {
+      padding: 8px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  
+  
+  

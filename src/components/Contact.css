@@ -47,7 +47,7 @@
   }
   
   /* Input and Textarea styling */
-  input, textarea {
+  .contact-form input, .contact-form textarea {
     width: 100%;
     padding: 10px;
     font-size: 14px;

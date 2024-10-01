@@ -25,12 +25,12 @@ export const Projects = () => {
     <div className="project-page-container">
       <h1 className="my-projects-txt">My Projects</h1>
       <p className="search-txt">Search projects by title or filter by category</p>
-      <div className="search-filter">
+      <div className="projects-search-filter">
         <div className="search-box">
           <input type="text" placeholder="Search Projects" className="search-input" />
         </div>
         <div className="filter-dropdown">
-          <select className="filter-select">
+          <select className="projects-filter-select">
             <option value="all">All Projects</option>
             <option value="web">Web Application</option>
             <option value="mobile">Mobile Application</option>
@@ -39,13 +39,13 @@ export const Projects = () => {
         </div>
       </div>
 
-      <div className="projects-grid">
+      <div className="all-projects-grid">
         {projects.map((project, index) => (
-          <div key={index} className="project-card">
-            <img src={project.image} alt={project.title} className="project-image" />
-            <div className="project-details">
-              <h3 className="project-title">{project.title}</h3>
-              <p className="project-category">{project.category}</p>
+          <div key={index} className="projects-card">
+            <img src={project.image} alt={project.title} className="projects-image" />
+            <div className="projects-details">
+              <h3 className="projects-title">{project.title}</h3>
+              <p className="projects-category">{project.category}</p>
             </div>
           </div>
         ))}

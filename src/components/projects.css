@@ -20,7 +20,7 @@
   }
   
   /* Search and Filter Section */
-  .search-filter {
+  .projects-search-filter {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,7 +45,7 @@
     margin-left: 20px;
   }
   
-  .filter-select {
+  .projects-filter-select {
     padding: 7px 10px;
     border: 1px solid #ccc;
     border-radius: 25px;
@@ -54,7 +54,7 @@
   }
   
   /* Grid Container */
-  .projects-grid {
+  .all-projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 30px;
@@ -63,35 +63,35 @@
   }
   
   /* Project Card Styles */
-  .project-card {
+  .projects-card {
     border-radius: 12px;
     box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease;
   }
   
-  .project-card:hover {
+  .projects-card:hover {
     transform: translateY(-10px);
   }
   
-  .project-image {
+  .projects-image {
     width: 100%;
     height: 200px;
     object-fit: cover;
   }
   
-  .project-details {
+  .projects-details {
     padding: 20px;
     text-align: center;
   }
   
-  .project-title {
+  .projects-title {
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 10px;
   }
   
-  .project-category {
+  .projects-category {
     color: #6c757d;
   }
   
@@ -99,16 +99,12 @@
   
   /* For screens smaller than 900px */
   @media (max-width: 900px) {
-    .portfolio-title {
-      font-size: 32px;
-    }
-  
-    .portfolio-subtitle {
+    .search-txt {
       font-size: 16px;
       margin-bottom: 20px;
     }
   
-    .portfolio-search-filter {
+    .projects-search-filter {
       flex-direction: column;
       align-items: flex-start;
     }
@@ -130,15 +126,11 @@
   
   /* For screens smaller than 768px */
   @media (max-width: 768px) {
-    .portfolio-title {
-      font-size: 28px;
-    }
-  
-    .portfolio-subtitle {
+    .search-txt {
       font-size: 14px;
     }
   
-    .portfolio-search-filter {
+    .projects-search-filter {
       align-items: center;
       justify-content: center;
       text-align: center;
@@ -148,7 +140,7 @@
       width: 100%;
     }
   
-    .filter-select {
+    .projects-filter-select {
       width: 100%;
     }
   
@@ -156,7 +148,7 @@
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     }
   
-    .project-card {
+    .projects-card {
       margin-bottom: 20px;
     }
   
@@ -171,16 +163,12 @@
       padding: 20px;
     }
   
-    .portfolio-title {
-      font-size: 24px;
-    }
-  
-    .portfolio-subtitle {
+    .search-txt {
       font-size: 12px;
       margin-bottom: 15px;
     }
   
-    .portfolio-search-filter {
+    .projects-search-filter {
       align-items: center;
       flex-direction: column;
     }
@@ -194,7 +182,7 @@
       margin-top: 10px;
     }
   
-    .filter-select {
+    .projects-filter-select {
       width: 100%;
     }
   
@@ -202,7 +190,7 @@
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     }
   
-    .project-card {
+    .projects-card {
       padding: 10px;
     }
   

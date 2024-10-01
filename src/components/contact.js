@@ -9,7 +9,7 @@ export const Contact = () => {
     <div className="contact-container">
       <div className="contact-form">
         <h2>Contact Form</h2>
-        <form>
+        <form className='contact-form'>
           <div className="form-group">
             <label htmlFor="fullName">Full Name</label>
             <input type="text" id="fullName" placeholder="Your Name" />

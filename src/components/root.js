@@ -77,7 +77,7 @@ export const Root = () => {
                    <FacebookIcon style={{fontSize: '45px'}} />
                 </a>
              </div>
-             <p className='copyright'> &copy; 2024 Amanuel</p>
+             <p className='copyright'> &copy; 2024 Amanuel Daget.</p>
         </section>
     </>
   );

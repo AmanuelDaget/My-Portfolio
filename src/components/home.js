@@ -24,7 +24,7 @@ export const Home = () => {
     {
       id: 1,
       title: 'QRShield Anti Pc Theft',
-      category: 'Web Application + Mobile Application',
+      category: 'Web Application',
       image: 'path-to-image-1', 
     },
     {
@@ -36,7 +36,7 @@ export const Home = () => {
     {
       id: 3,
       title: 'Full Stack Employee management',
-      category: 'MERN Application',
+      category: 'Web Application',
       image: 'path-to-image-2',
     },
     {
@@ -48,13 +48,13 @@ export const Home = () => {
     {
       id: 5,
       title: 'Full Stack Registration and Login system ',
-      category: 'MERN Application',
+      category: 'Web Application',
       image: 'path-to-image-3',
     },
     {
       id: 6,
       title: 'Pizza Ordering Front End ',
-      category: 'UI/UX Design',
+      category: 'Web Application',
       image: 'path-to-image-3',
     },
   ];
@@ -100,7 +100,7 @@ export const Home = () => {
               ))}
             </div>
             <div className="view-more-btn">
-              <button>More Projects</button>
+              <Link to={'projects'}><button>More Projects</button></Link>
             </div>
         </section>
     </div>

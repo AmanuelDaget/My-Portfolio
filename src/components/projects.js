@@ -23,10 +23,9 @@ export const Projects = () => {
 
   return (
     <div className="project-page-container">
-      <h1 className="my-projects">My Projects</h1>
-      <p className="portfolio-subtitle">Search projects by title or filter by category</p>
-
-      <div className="portfolio-search-filter">
+      <h1 className="my-projects-txt">My Projects</h1>
+      <p className="search-txt">Search projects by title or filter by category</p>
+      <div className="search-filter">
         <div className="search-box">
           <input type="text" placeholder="Search Projects" className="search-input" />
         </div>
@@ -40,7 +39,7 @@ export const Projects = () => {
         </div>
       </div>
 
-      <div className="portfolio-grid">
+      <div className="projects-grid">
         {projects.map((project, index) => (
           <div key={index} className="project-card">
             <img src={project.image} alt={project.title} className="project-image" />

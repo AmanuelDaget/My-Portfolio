@@ -1,5 +1,8 @@
 import React from 'react';
 import './Contact.css';
+import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
 
 export const Contact = () => {
   return (
@@ -28,9 +31,9 @@ export const Contact = () => {
       </div>
       <div className="contact-details">
         <h2>Contact details</h2>
-        <p><i className="fa fa-map-marker"></i> Gondar,Ethiopia</p>
-        <p><i className="fa fa-envelope"></i> dagetamanuel@gmail.com</p>
-        <p><i className="fa fa-phone"></i> +251 960 824 277</p>
+        <p><LocationOnOutlinedIcon /> Gondar,Ethiopia</p>
+        <p><EmailOutlinedIcon /> dagetamanuel@gmail.com</p>
+        <p><PhoneOutlinedIcon /> +251 960 824 277</p>
       </div>
     </div>
   );

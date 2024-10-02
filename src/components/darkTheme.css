@@ -1,11 +1,11 @@
   /* Dark theme */
   body.dark-theme {
-    background-color:  #131414;
+    background-color:  #091e31;
     color: #ffffff;
   }
   
   body.dark-theme .footer-section {
-    background-color:   #131414;
+    background-color:   #091e31;
   }
   
   body.dark-theme header,
@@ -13,8 +13,22 @@
   body.dark-theme .home-section,
   body.dark-theme .theme-toggle
    {
-    background-color:  #131414;
+    background-color:  #091e31;
   }
+  
+  body.dark-theme input,
+  body.dark-theme textarea,
+  body.dark-theme select
+  {
+   background-color:  #2c4155;
+ }
+ body.dark-theme input,
+ body.dark-theme textarea,
+ body.dark-theme select
+ {
+   color: #ffffff;
+   border: none;
+ }
   
   body.dark-theme .theme-toggle svg,
   body.dark-theme header .logo span ,
@@ -38,12 +52,17 @@
 
   body.dark-theme .project-card 
    {
-    background-color:  #75797a;
+    background-color:  #1e3950;
   }
   
   body.dark-theme .projects-card 
    {
-    background-color:  #75797a;
+    background-color:  #1e3950;
+  }
+
+  body.dark-theme .search-icon 
+   {
+    background-color:  #1e3950;
   }
 
   body.dark-theme .success-message {
@@ -58,5 +77,5 @@
   }
   body.dark-theme .contact-form{
     box-shadow: none;
-    background-color: #2c343a;
+    background-color: #152d46;
   }

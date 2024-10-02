@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import './projects.css'; // Import the CSS file for styling
 import A from '../assets/A.png'
+import SearchIcon from '@mui/icons-material/Search';
 
 export const Projects = () => {
   const projects = [
@@ -59,10 +60,16 @@ export const Projects = () => {
       <h1 className="my-projects-txt">My Projects</h1>
       <p className="search-txt">Search projects by title or filter by category</p>
       <div className="projects-search-filter">
-        <input type="text" placeholder="Search Projects" className="search-input"
-               value={searchInput}
-               onChange={handleSearchChange}
-        />
+        
+        <div className='search'>
+                  <div className='search-icon'>
+                     <SearchIcon />
+                  </div>
+                  <input type="text" placeholder="Search Projects" className="search-input"
+                        value={searchInput}
+                        onChange={handleSearchChange}
+                  />
+        </div>
         <select className="projects-filter-select" value={selectedCategory} onChange={handleCategoryChange}>
           <option value="all">All Projects</option>
           <option value="web">Web Application</option>

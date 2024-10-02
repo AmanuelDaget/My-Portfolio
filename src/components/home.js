@@ -10,6 +10,7 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import { Link } from 'react-router-dom';
 import DownloadIcon from '@mui/icons-material/Download';
+import SearchIcon from '@mui/icons-material/Search';
 
 
 export const Home = () => {
@@ -96,13 +97,18 @@ export const Home = () => {
               <p>Search projects by title or filter by category</p>
             </div>
             <div className="search-filter">
-              <input
-                type="text"
-                placeholder="Search Projects"
-                className="search-bar" 
-                value={searchInput}
-                onChange={handleSearchChange}
-             />
+              <div className='search'>
+                  <div className='search-icon'>
+                     <SearchIcon />
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="Search Projects"
+                    className="search-bar" 
+                    value={searchInput}
+                    onChange={handleSearchChange}
+                />
+              </div>
               <select className="filter-select" value={selectedCategory} onChange={handleCategoryChange}>
                 <option>All Projects</option>
                 <option>Web Application</option>

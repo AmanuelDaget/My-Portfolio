@@ -9,6 +9,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import { Link } from 'react-router-dom';
+import DownloadIcon from '@mui/icons-material/Download';
 
 
 export const Home = () => {
@@ -18,7 +19,13 @@ export const Home = () => {
     animationData: programmerAnimation,
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice'
-    }
+    },
+  };
+  const handleDownload = () => {
+      const link = document.createElement('a');
+      link.href = '/Resume.pdf'; // If the CV is inside `public/assets` folder
+      link.download = 'AmanuelDaget_Resume.pdf'; // The name of the file after download
+      link.click();
   };
   const projects = [
     {
@@ -75,12 +82,12 @@ export const Home = () => {
           <div className="content">
             <h1>HI, I AM Amanuel</h1>
             <p>A Full-Stack Developer</p>
-            <button className="download-btn">
-              <i className="fas fa-download"></i> Download CV
+            <button className="download-btn" onClick={handleDownload}>
+               <DownloadIcon /> Download Resume
             </button>
           </div>
           <div className="animation-container">
-            <Lottie options={defaultOptions} />
+            <Lottie options={defaultOptions}/>
           </div>
         </section>
         <section className="projects-section">

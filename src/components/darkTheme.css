@@ -1,21 +1,57 @@
   /* Dark theme */
   body.dark-theme {
-    background-color:  #163f4d;
+    background-color:  #131414;
     color: #ffffff;
   }
   
   body.dark-theme .footer-section {
-    background-color:   #163f4d;
+    background-color:   #131414;
   }
   
   body.dark-theme header,
-  body.dark-theme nav {
-    background-color:  #163f4d;
+  body.dark-theme nav,
+  body.dark-theme .home-section,
+  body.dark-theme .theme-toggle
+   {
+    background-color:  #131414;
   }
   
   body.dark-theme .theme-toggle svg,
   body.dark-theme header .logo span ,
-  body.dark-theme a {
+  body.dark-theme a ,
+  body.dark-theme h1,
+  body.dark-theme h2,
+  body.dark-theme p,
+  body.dark-theme h3,
+  body.dark-theme header nav .navs a 
+  {
     color: #ffffff;
   }
   
+  
+  body.dark-theme .download-btn{
+    background-color: white;
+  }
+  body.dark-theme .download-btn:hover {
+    background-color: rgb(150, 167, 172);
+  }
+
+  body.dark-theme .project-card 
+   {
+    background-color:  #75797a;
+  }
+
+  body.dark-theme .success-message {
+    background-color: #cbffe7;
+  }
+  body.dark-theme .contact-details p {
+    color: #a79e9e;
+  }
+  
+  body.dark-theme .contact-form label{
+    color: #c5c0c0;
+  }
+  body.dark-theme .contact-form{
+    box-shadow: none;
+    background-color: #2c343a;
+  }

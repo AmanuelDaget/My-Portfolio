@@ -1,23 +1,45 @@
 // Portfolio.js
 import React, { useState } from 'react';
 import './projects.css'; // Import the CSS file for styling
-import img1 from'../assets/A.png'
+import A from '../assets/A.png'
+
 export const Projects = () => {
   const projects = [
     {
-      title: 'Google Health Platform',
+      id: 1,
+      title: 'QRShield Anti Pc Theft',
       category: 'Web Application',
-      image: img1,
+      image: 'path-to-image-1', 
     },
     {
-      title: 'Phoenix Digital Agency',
+      id: 2,
+      title: 'QRShield Anti Pc Theft ',
       category: 'Mobile Application',
-      image: img1,
+      image: 'path-to-image-1', 
     },
     {
-      title: 'Project Management UI',
-      category: 'UI/UX Design',
-      image: img1,
+      id: 3,
+      title: 'Full Stack Employee management',
+      category: 'Web Application',
+      image: 'path-to-image-2',
+    },
+    {
+      id: 4,
+      title: 'Pizza Ordering Front End ',
+      category: 'Front End Web App',
+      image: 'path-to-image-3',
+    },
+    {
+      id: 5,
+      title: 'Full Stack Registration and Login system ',
+      category: 'Web Application',
+      image: 'path-to-image-3',
+    },
+    {
+      id: 6,
+      title: 'Pizza Ordering Front End ',
+      category: 'Web Application',
+      image: 'path-to-image-3',
     },
   ];
 
@@ -52,7 +74,7 @@ export const Projects = () => {
       <div className="all-projects-grid">
         {filteredProjects.map((project, index) => (
           <div key={index} className="projects-card">
-            <img src={project.image} alt={project.title} className="projects-image" />
+            <img src={A} alt={project.title} className="projects-image" />
             <div className="projects-details">
               <h3 className="projects-title">{project.title}</h3>
               <p className="projects-category">{project.category}</p>

@@ -79,3 +79,10 @@
     box-shadow: none;
     background-color: #152d46;
   }
+  body.dark-theme .error-message{
+    color: red;
+  }
+  body.dark-theme .success-message {
+    background-color: #d1f7e5;
+    color: #0f8349;
+  }

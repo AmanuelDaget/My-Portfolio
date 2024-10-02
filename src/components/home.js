@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Home.css'; 
 import Lottie from 'react-lottie';
 import programmerAnimation from '../assets/programmer.json';
@@ -58,6 +58,17 @@ export const Home = () => {
       image: 'path-to-image-3',
     },
   ];
+  const [searchInput, setSearchInput] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState('all');
+
+  const filteredProjects = projects.filter((project) => {
+      const matchesSearch = project.title.toLowerCase().includes(searchInput.toLowerCase());
+      const matchesCategory = selectedCategory === 'all' || project.category.toLowerCase().includes(selectedCategory);
+      return matchesSearch && matchesCategory;
+  });
+
+    const handleSearchChange = (e) => setSearchInput(e.target.value);
+    const handleCategoryChange = (e) => setSelectedCategory(e.target.value.toLowerCase());
   return (
     <div className='home-container'>
         <section className="home-section">
@@ -81,9 +92,11 @@ export const Home = () => {
               <input
                 type="text"
                 placeholder="Search Projects"
-                className="search-bar"
-              />
-              <select className="filter-select">
+                className="search-bar" 
+                value={searchInput}
+                onChange={handleSearchChange}
+             />
+              <select className="filter-select" value={selectedCategory} onChange={handleCategoryChange}>
                 <option>All Projects</option>
                 <option>Web Application</option>
                 <option>Mobile Application</option>
@@ -91,7 +104,7 @@ export const Home = () => {
               </select>
             </div>
             <div className="projects-grid">
-              {projects.map((project) => (
+              {filteredProjects.map((project) => (
                 <div className="project-card" key={project.id}>
                   <img src={A} alt={project.title} className="project-img" />
                   <h3>{project.title}</h3>

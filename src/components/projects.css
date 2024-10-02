@@ -23,17 +23,12 @@
   .projects-search-filter {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
     align-items: center;
-    max-width: 500px;
-    margin: 20px ;
+    gap: 40px;
   }
-  
-  .search-box {
-    flex: 1;
-  }
-  
   .search-input {
-    width: 100%;
+    width: 40%;
     padding: 7px 10px ;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -41,34 +36,33 @@
     font-size: 14px;
   }
   
-  .filter-dropdown {
-    margin-left: 20px;
-  }
-  
   .projects-filter-select {
-    padding: 7px 10px;
-    border: 1px solid #ccc;
-    border-radius: 25px;
-    font-size: 14px;
-    float: right;
+    padding: 7px 10px ;
+    width: 20%;
+    border: 1px solid #dfe6e9;
+    border-radius: 8px;
   }
   
   /* Grid Container */
   .all-projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
-    max-width: 1200px;
-    margin: 40px auto;
-  }
-  
-  /* Project Card Styles */
-  .projects-card {
-    border-radius: 12px;
-    box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease;
-  }
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 40px auto;
+      justify-content: center; /* Center the grid items */
+    }
+
+/* Project Card Styles */
+    .projects-card {
+      border-radius: 12px;
+      box-shadow: 2px 2px 15px 2px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      max-width: 350px; /* Set a maximum width for the project card */
+      width: 100%; /* Maintain the card's width */
+    }
+
   
   .projects-card:hover {
     transform: translateY(-10px);
@@ -132,16 +126,17 @@
   
     .projects-search-filter {
       align-items: center;
-      justify-content: center;
-      text-align: center;
+      justify-content: space-between;
+      /* text-align: center; */
+      flex-direction: row;
     }
-  
-    .search-box {
-      width: 100%;
+    .search-input {
+      width: 60%;
+      margin-bottom: 10px;
     }
-  
     .projects-filter-select {
-      width: 100%;
+      width: 40%;
+      margin-bottom: 10px;
     }
   
     .portfolio-grid {
@@ -170,20 +165,12 @@
   
     .projects-search-filter {
       align-items: center;
-      flex-direction: column;
-    }
-  
-    .search-box {
-      width: 100%;
+      flex-direction: row;
     }
   
     .filter-dropdown {
       margin-left: 0;
       margin-top: 10px;
-    }
-  
-    .projects-filter-select {
-      width: 100%;
     }
   
     .portfolio-grid {

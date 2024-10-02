@@ -1,8 +1,35 @@
 /* General container for contact page */
+.success-message, .error-message {
+  max-width: 600px;
+  margin: 20px auto; /* Center the message */
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.success-message {
+  background-color: #e6ffed; /* Light green background */
+  border: 1px solid #38a169; /* Green border */
+  color: #38a169; /* Green text */
+}
+
+.error-message {
+  background-color: #ffe6e6; /* Light red background */
+  border: 1px solid #e53e3e; /* Red border */
+  color: #e53e3e; /* Red text */
+}
+.loading-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 .contact-container {
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
     align-items: flex-start;
     flex-wrap: wrap;
     padding: 80px 40px 40px 80px;
@@ -118,4 +145,8 @@
       font-size: 14px;
     }
   }
+  
+
+
+
   

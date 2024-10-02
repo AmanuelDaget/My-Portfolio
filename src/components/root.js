@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState ,useEffect} from 'react';
 import { Link, NavLink, Outlet } from 'react-router-dom';
 import A from '../assets/A.png'
 import NightlightOutlinedIcon from '@mui/icons-material/NightlightOutlined';
@@ -12,11 +12,23 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 
 export const Root = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [darkTheme,setDarkTheme]= useState(false)
+  const [darkTheme, setDarkTheme] = useState(() => {
+   // Retrieve the theme from localStorage (default is false for light mode)
+   return localStorage.getItem('theme') === 'dark';
+ });
 
-  const toggleTheme = () => {
-    setDarkTheme(!darkTheme);
-  };
+ // Apply theme to the body when the component mounts
+ useEffect(() => {
+   document.body.className = darkTheme ? 'dark-theme' : 'light-theme';
+ }, [darkTheme]);
+
+ const toggleTheme = () => {
+   setDarkTheme((prevTheme) => {
+     const newTheme = !prevTheme;
+     localStorage.setItem('theme', newTheme ? 'dark' : 'light'); // Store theme in localStorage
+     return newTheme;
+   });
+ };
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -37,8 +49,9 @@ export const Root = () => {
           <div className="theme-toggle">
              {
                 darkTheme ? 
-                   <NightlightOutlinedIcon onClick={toggleTheme}/>
-                :  <LightModeOutlinedIcon onClick={toggleTheme}/>
+                    <LightModeOutlinedIcon onClick={toggleTheme}/>
+                 :  <NightlightOutlinedIcon onClick={toggleTheme}/>
+                  
              }
           </div>
         </nav>
@@ -61,19 +74,19 @@ export const Root = () => {
       <section className='footer-section'>
              <p className='follow-txt'>Follow me</p>
              <div className='socials'>
-                <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/AmanuelDaget" target="_blank" rel="noopener noreferrer">
                    <GitHubIcon style={{ fontSize: '45px'}} />
                 </a>
-                <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/amanuel-daget-587ab1268/" target="_blank" rel="noopener noreferrer">
                    <LinkedInIcon style={{ fontSize: '45px' }} />
                 </a>
-                <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://x.com/AmanuelDaget" target="_blank" rel="noopener noreferrer">
                    <TwitterIcon style={{fontSize: '45px'}} />
                 </a>
-                <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.youtube.com/@ad27" target="_blank" rel="noopener noreferrer">
                    <YouTubeIcon style={{ fontSize: '45px'}} />
                 </a>
-                <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.facebook.com/amanuel.daget.3" target="_blank" rel="noopener noreferrer">
                    <FacebookIcon style={{fontSize: '45px'}} />
                 </a>
              </div>

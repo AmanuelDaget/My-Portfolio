@@ -1,0 +1,21 @@
+  /* Dark theme */
+  body.dark-theme {
+    background-color:  #163f4d;
+    color: #ffffff;
+  }
+  
+  body.dark-theme .footer-section {
+    background-color:   #163f4d;
+  }
+  
+  body.dark-theme header,
+  body.dark-theme nav {
+    background-color:  #163f4d;
+  }
+  
+  body.dark-theme .theme-toggle svg,
+  body.dark-theme header .logo span ,
+  body.dark-theme a {
+    color: #ffffff;
+  }
+  

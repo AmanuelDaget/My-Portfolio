@@ -1,5 +1,6 @@
 import { createBrowserRouter, createRoutesFromElements, NavLink, Outlet, Route, RouterProvider } from 'react-router-dom';
 import './App.css';
+import './components/darkTheme.css'
 import { Home } from './components/home';
 import { Contact } from './components/contact';
 import { AboutMe } from './components/aboutMe';

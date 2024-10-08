@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Home.css'; 
 import Lottie from 'react-lottie';
 import programmerAnimation from '../assets/programmer.json';
-import A from '../assets/A.png'
+import dashboard from '../assets/dashboard-img.PNG.'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -33,7 +33,7 @@ export const Home = () => {
       id: 1,
       title: 'QRShield Anti Pc Theft',
       category: 'Web Application',
-      image: 'path-to-image-1', 
+      image: dashboard, 
     },
     {
       id: 2,
@@ -119,7 +119,7 @@ export const Home = () => {
             <div className="projects-grid">
               {filteredProjects.map((project) => (
                 <div className="project-card" key={project.id}>
-                  <img src={A} alt={project.title} className="project-img" />
+                  <img src={project.img} alt={project.title} className="project-img" />
                   <h3>{project.title}</h3>
                   <p>{project.category}</p>
                 </div>

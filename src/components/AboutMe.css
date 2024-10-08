@@ -75,3 +75,71 @@
     }
   }
   
+
+  /* Skills.css */
+
+
+.skills-section {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  /* background: #2a2a2a; Darker card background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.skills-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.skills-header h2 {
+  font-size: 36px;
+  margin: 0;
+  /* color: #ffd700; Golden color */
+}
+
+.skills-header p {
+  font-size: 16px;
+  max-width: 600px;
+  margin: 10px auto;
+  line-height: 1.5;
+  /* color: #bbb; Light gray text */
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skill-card {
+  width: 150px;
+  height: 150px;
+  /* background: #333; Dark card background */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.skill-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  /* color: #ddd; Light gray text */
+}

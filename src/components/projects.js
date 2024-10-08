@@ -3,6 +3,9 @@ import React, { useState } from 'react';
 import './projects.css'; // Import the CSS file for styling
 import A from '../assets/A.png'
 import SearchIcon from '@mui/icons-material/Search';
+import dashboard from '../assets/dashboard-img.PNG'
+import mobileApp from '../assets/mobileAppQRShield.jpg'
+import empDash from '../assets/employeeDash-img.png'
 
 export const Projects = () => {
   const projects = [
@@ -10,19 +13,19 @@ export const Projects = () => {
       id: 1,
       title: 'QRShield Anti Pc Theft',
       category: 'Web Application',
-      image: 'path-to-image-1', 
+      image: dashboard, 
     },
     {
       id: 2,
       title: 'QRShield Anti Pc Theft ',
       category: 'Mobile Application',
-      image: 'path-to-image-1', 
+      image: mobileApp, 
     },
     {
       id: 3,
       title: 'Full Stack Employee management',
       category: 'Web Application',
-      image: 'path-to-image-2',
+      image: empDash,
     },
     {
       id: 4,
@@ -81,7 +84,7 @@ export const Projects = () => {
       <div className="all-projects-grid">
         {filteredProjects.map((project, index) => (
           <div key={index} className="projects-card">
-            <img src={A} alt={project.title} className="projects-image" />
+            <img src={project.image} alt={project.title} className="projects-image" />
             <div className="projects-details">
               <h3 className="projects-title">{project.title}</h3>
               <p className="projects-category">{project.category}</p>

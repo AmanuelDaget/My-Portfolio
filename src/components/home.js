@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import './Home.css'; 
 import Lottie from 'react-lottie';
 import programmerAnimation from '../assets/programmer.json';
-import dashboard from '../assets/dashboard-img.PNG.'
+import dashboard from '../assets/dashboard-img.PNG'
+import mobileApp from '../assets/mobileAppQRShield.jpg'
+import empDash from '../assets/employeeDash-img.png'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -39,31 +41,13 @@ export const Home = () => {
       id: 2,
       title: 'QRShield Anti Pc Theft ',
       category: 'Mobile Application',
-      image: 'path-to-image-1', 
+      image: mobileApp, 
     },
     {
       id: 3,
       title: 'Full Stack Employee management',
       category: 'Web Application',
-      image: 'path-to-image-2',
-    },
-    {
-      id: 4,
-      title: 'Pizza Ordering Front End ',
-      category: 'Front End Web App',
-      image: 'path-to-image-3',
-    },
-    {
-      id: 5,
-      title: 'Full Stack Registration and Login system ',
-      category: 'Web Application',
-      image: 'path-to-image-3',
-    },
-    {
-      id: 6,
-      title: 'Pizza Ordering Front End ',
-      category: 'Web Application',
-      image: 'path-to-image-3',
+      image: empDash,
     },
   ];
   const [searchInput, setSearchInput] = useState('');
@@ -119,7 +103,7 @@ export const Home = () => {
             <div className="projects-grid">
               {filteredProjects.map((project) => (
                 <div className="project-card" key={project.id}>
-                  <img src={project.img} alt={project.title} className="project-img" />
+                  <img src={project.image} alt={project.title} className="project-img" />
                   <h3>{project.title}</h3>
                   <p>{project.category}</p>
                 </div>

@@ -3,6 +3,19 @@ import './AboutMe.css';
 import profileImage from '../assets/AmanPortfolioImg.png'; 
 
 export const AboutMe = () => {
+  const skillImages = [
+    { name: 'HTML5', src: 'https://cdn-icons-png.flaticon.com/512/732/732212.png' },
+    { name: 'CSS3', src: 'https://cdn-icons-png.flaticon.com/512/732/732190.png' },
+    { name: 'Bootstrap 5', src: 'https://cdn-icons-png.flaticon.com/512/2111/2111425.png' },
+    { name: 'JavaScript', src: 'https://cdn-icons-png.flaticon.com/512/5968/5968292.png' },
+    { name: 'PHP', src: 'https://cdn-icons-png.flaticon.com/512/1216/1216733.png' },
+    { name: 'React', src: 'https://cdn-icons-png.flaticon.com/512/1126/1126012.png' },
+    { name: 'Node.js', src: 'https://nodejs.org/static/images/logo.svg' },
+    { name: 'Express.js', src: 'https://expressjs.com/images/express-facebook-share.png' },
+    { name: 'MongoDB', src: 'https://cdn.iconscout.com/icon/free/png-512/mongodb-4-1175139.png' },
+    { name: 'MySQL', src: 'https://cdn-icons-png.flaticon.com/512/devicon/Devicon/051-mysql.svg' },
+    { name: 'React Native', src: 'https://reactnative.dev/img/header_logo.svg' },
+  ];
   return (
     <div className="about-container">
       <div className="about-image">
@@ -18,6 +31,22 @@ export const AboutMe = () => {
           I enjoy taking on challenging projects and learning new technologies to build efficient, scalable web applications. I aim to leverage my skills to contribute to innovative projects and bring value to any team I am part of.
         </p>
       </div>
+      <div className="skills-section">
+      <div className="skills-header">
+        <h2>What I do</h2>
+        <p>
+          I am a software engineer currently pursuing a Bachelor's degree. I am a UI/UX designer and working as a freelancer.
+        </p>
+      </div>
+      <div className="skills-grid">
+        {skillImages.map((skill, index) => (
+          <div key={index} className="skill-card">
+            <img src={skill.src} alt={skill.name} />
+            <p>{skill.name}</p>
+          </div>
+        ))}
+      </div>
+    </div>
     </div>
   );
 };

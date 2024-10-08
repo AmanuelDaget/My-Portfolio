@@ -8,6 +8,7 @@ import mobileApp from '../assets/mobileAppQRShield.jpg'
 import empDash from '../assets/employeeDash-img.png'
 import pizzaOrdering from '../assets/pizaOrdering-cart-img.PNG'
 import authRegister from '../assets/auth-register-img.png'
+import calculatorApp from '../assets/calculator-app-img.png'
 
 
 export const Projects = () => {
@@ -44,9 +45,9 @@ export const Projects = () => {
     },
     {
       id: 6,
-      title: 'Pizza Ordering Front End ',
-      category: 'Web Application',
-      image: 'path-to-image-3',
+      title: 'Calculator Mobile App ',
+      category: 'Mobile App',
+      image: calculatorApp,
     },
   ];
 

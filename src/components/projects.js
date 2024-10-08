@@ -6,6 +6,9 @@ import SearchIcon from '@mui/icons-material/Search';
 import dashboard from '../assets/dashboard-img.PNG'
 import mobileApp from '../assets/mobileAppQRShield.jpg'
 import empDash from '../assets/employeeDash-img.png'
+import pizzaOrdering from '../assets/pizaOrdering-cart-img.PNG'
+import authRegister from '../assets/auth-register-img.png'
+
 
 export const Projects = () => {
   const projects = [
@@ -31,13 +34,13 @@ export const Projects = () => {
       id: 4,
       title: 'Pizza Ordering Front End ',
       category: 'Front End Web App',
-      image: 'path-to-image-3',
+      image: pizzaOrdering,
     },
     {
       id: 5,
       title: 'Full Stack Registration and Login system ',
       category: 'Web Application',
-      image: 'path-to-image-3',
+      image: authRegister,
     },
     {
       id: 6,

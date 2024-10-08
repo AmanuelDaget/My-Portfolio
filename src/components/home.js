@@ -94,10 +94,9 @@ export const Home = () => {
                 />
               </div>
               <select className="filter-select" value={selectedCategory} onChange={handleCategoryChange}>
-                <option>All Projects</option>
-                <option>Web Application</option>
-                <option>Mobile Application</option>
-                <option>UI/UX Design</option>
+                <option value={'all'}>All Projects</option>
+                <option value={'web'}>Web Application</option>
+                <option value={'mobile'}>Mobile Application</option>
               </select>
             </div>
             <div className="projects-grid">

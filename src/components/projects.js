@@ -77,7 +77,6 @@ export const Projects = () => {
           <option value="all">All Projects</option>
           <option value="web">Web Application</option>
           <option value="mobile">Mobile Application</option>
-          <option value="design">UI/UX Design</option>
         </select>
       </div>
 

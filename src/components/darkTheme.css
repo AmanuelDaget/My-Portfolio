@@ -86,3 +86,22 @@
     background-color: #d1f7e5;
     color: #0f8349;
   }
+
+  body.dark-theme .skills-section {
+    background: #2a2a2a;
+  }
+  body.dark-theme .skills-header h2 {
+    color: #ffd700;
+  }
+  body.dark-theme .skills-header p {
+     color: #bbb; 
+  }
+  body.dark-theme .skill-card {
+    background: #333;
+  }
+  body.dark-theme .skill-card p {
+     color: #ddd;
+  }
+  body.dark-theme .hamburger div{
+    background-color: white;
+  }

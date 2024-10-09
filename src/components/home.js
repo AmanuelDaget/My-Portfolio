@@ -26,8 +26,8 @@ export const Home = () => {
   };
   const handleDownload = () => {
       const link = document.createElement('a');
-      link.href = '/Resume.pdf'; // If the CV is inside `public/assets` folder
-      link.download = 'AmanuelDaget_Resume.pdf'; // The name of the file after download
+      link.href = '/MyResume.pdf'; 
+      link.download = 'AmanuelDaget_Resume.pdf'; 
       link.click();
   };
   const projects = [

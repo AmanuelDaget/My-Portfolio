@@ -26,7 +26,7 @@ export const Home = () => {
   };
   const handleDownload = () => {
       const link = document.createElement('a');
-      link.href = '/MyResume_4.pdf'; 
+      link.href = '/MyResume_6.pdf'; 
       link.download = 'AmanuelDaget_Resume.pdf'; 
       link.click();
   };
